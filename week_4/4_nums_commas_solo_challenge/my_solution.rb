@@ -11,6 +11,9 @@
 # What is the output? (i.e. What should the code return?)
 # What are the steps needed to solve the problem?
 
+# define separate_comma method, taking a single integer parameter
+# 
+
 
 # 2. Initial Solution
 
