@@ -32,19 +32,46 @@ end
 # after you write do. A hash, on the other hand, has linked elements, so you have to specify two.
 # You may then use the parameter names as if they were variables within the block.
 
-# Person 2
 def my_array_modification_method(source, thing_to_modify)
-  # Your code here!
+  newArr = []
+  newArr = source.collect do |arr_element| 
+    if arr_element.is_a? Numeric
+      arr_element += thing_to_find
+    else
+      arr_element
+    end
+  end
+  newArr
 end
 
+
 def my_hash_modification_method(source, thing_to_modify)
-  # Your code here!
+  source.each do |k,v| 
+    source[k] = v+thing_to_modify
+  end
 end
 
 # Identify and describe the ruby method you implemented. 
+# Psuedocode #1
+# my_array_finding_method(i_want_pets, 1) 
 # 
+# search each array element
+# if array element is a number then add 1
+# if not do nothing
+# return updated array
+# Thoughts: It took me awhile to fixe this one initally and I didn't know what I was doing wrong. 
+ # Turns out I need to intitiallize the newAray, and set it equal to the source.collect method so I could return it.  
+ # Took a long time to figure out what was miising.
+# Collect Method takes a block and applies it to each element of self, returning the new elements.
+# 
+# Psuedocode #2
+# my_hash_modification_method(my_family_pets_ages, 2) 
 #
-#
+# def my_hash_modification_method 
+# 2 variables k, v
+# set value to equal +1 of current value
+# This is a simple each hash method.  It takes each key of the hash and applies a math change to the value, 
+# ruturning both new key's and values, although the key is unchanged in this instance.
 
 
 # Person 3
