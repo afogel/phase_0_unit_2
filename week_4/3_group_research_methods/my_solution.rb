@@ -63,18 +63,44 @@ end
 
 
 # Person 4
+# My Array Deletion
 def my_array_deletion_method(source, thing_to_delete)
-  #Your code here!
+	source.each {|index| source.delete(index) if index.include?(thing_to_delete)}
 end
-
+# My Hash Deletion
 def my_hash_deletion_method(source, thing_to_delete)
-  #Your code here!
+	source.each {|key, value| source.delete(key) if key.include?(thing_to_delete)}
+end
+# Why not both?
+def my_deletion_method(source, thing_to_delete)
+	if source.is_a?(Array)
+   		source.each {|index| source.delete(index) if index.include?(thing_to_delete)}
+   else
+   		source.each {|key, value| source.delete(key) if key.include?(thing_to_delete)}
+   	end
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
-#
+=begin
+I took it upon myself to combine the two methods into one.  I had them split into two and then 
+saw an easy way to make them one with a simple if x.is_a? statement.  I will also include the 
+two seperate methods so the driver code below will function properly.
+
+I'm using an Object#is_a?() to ask if my source variable is of the Array class.  Calling this
+method will result in a true/false which will be used to lead my if statement.
+Example: "Brian".is_a?(String) => true
+
+An iteration method #each was used to loop through the array / hash.
+Example: [1,2,3].each {|index| index ** 2} => [1,4,9]
+
+The Array# and Hash# share quite a few methods, for example; #delete() and #include?().  I first 
+use the #include?() method to output true/false in order to check against my index if it contains 
+the thing_to_delete.  If it does contain what I need to delete, I call the #delete() method and
+pass it the argument, index.  
+Example: "Willy Wonka".include?("z") => false
+Example: ["a", "b", "c"].delete("b") => ["a", "c"]
+Example: {key1: value1, key2: value2}.delete(key1) => {key:2 value2}
+=end
 
 
 ################## DRIVER CODE ###################################

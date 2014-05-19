@@ -75,6 +75,7 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 # Does this return the same thing every time?
+# Nope! the white space characters are bound to be different, as they are randomly drawn from the spaces Array.
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
@@ -85,4 +86,26 @@ p translate_to_cipher("I want cookies")
 
 
 # 5. Reflection 
-
+# What parts of your strategy worked? What problems did you face?
+# This question doesn't quite apply. No problems really, just some readability issues with code,
+# but that was all straightened out after careful research.
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# Just questions on the uses of methods. Ruby Docs did the trick.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# No conceptual issues.
+# 
+# Did you learn any new skills or tricks?
+# Yeah! the Array#zip() and Array#rotate() methods were new, and it was cool to see how they 
+# worked, especially together. Additionally, this was a really slick way of pairing key pairs
+# in arrays and then using the Hash constructor syntax to build a hash of the "paired" array elements.
+# 
+# How confident are you with each of the Learning Competencies?
+# Very confident.
+# 
+# Which parts of the challenge did you enjoy?
+# Researching new methods and being exposed to new ways of solving problems was really enjoyable.
+# 
+# Which parts of the challenge did you find tedious?
+# I thought that annnotating every line of code was a bit tedious. Oh well :)

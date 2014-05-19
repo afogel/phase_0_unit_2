@@ -138,5 +138,26 @@ p north_korean_cipher("ger^wsqifshc*nywx^kix^qi&10000*fekw@sj$gssp%vergl@hsvmxsw
 
 # Reflection
 
-
- 
+# What parts of your strategy worked? What problems did you face?
+# All parts of the strategy worked :) The benefits of pair-programming.
+ # 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# The only questions we ran into were about syntax for methods and finding methods that would
+# best solve our issues. We used ruby docs primarily, though occasionally we referenced stack overflow.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# Still struggling a bit with regexp, but I think with time it'll come.
+# 
+# Did you learn any new skills or tricks?
+# Yeah! using regexp to find parts of strings was pretty neat. Also, I forgot that you can do ranges
+# of the alphabet and push that to an array. Neato!
+# 
+# How confident are you with each of the Learning Competencies?
+# Fairly confident, though refactoring is still a process that I hope to improve on.
+# 
+# Which parts of the challenge did you enjoy?
+# reading the code.
+# 
+# Which parts of the challenge did you find tedious?
+# annotating every line
+# 

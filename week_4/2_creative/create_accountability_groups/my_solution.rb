@@ -35,20 +35,21 @@ end
 
 # 4. Refactored Solution
 
-# unit1 = [grp1,...,grp6]   => grp1 = ['name1',...,'name4']
-# cohort_array 
-=begin
-forvalues i = 1(1)6{
-    var grp`i' = [arrayblah]
-}
-
-#  grp1, grp2,...grp6
-=end
-for i in 1..shuffled_array.length
-    grp`i' = []
+def create_groups(cohort_array)
+    unitnum = 1
+    phase0_grps = Hash.new
+    while unitnum<4
+        shuffled_array = cohort_array.shuffle.each_slice(4).to_a
+        unit = Hash.new
+        for i in 1..shuffled_array.length
+            # reduce redundancy in key titles
+            unit["grp#{i}".to_sym] = shuffled_array[i-1]
+        end
+        phase0_grps["unit#{unitnum}".to_sym] = unit
+        unitnum+=1
+    end
+    return phase0_grps
 end
-
-
 
 
 
@@ -78,4 +79,27 @@ end
 
 # 5. Reflection 
 
-
+# What parts of your strategy worked? What problems did you face?
+# I faced problems trying to get the hash keys to be the values that I was looking for.
+# I also had a hard time conceptualizing how to best organize the data, but finally settled on 
+# nesting hashes and arrays.
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+#  I was unsure about how to structure the data, but I talked it out with a cohort member and we came up
+# with a good solution :)
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# naming conventions, mainly? Dunno, not too much with this challenge.
+# 
+# Did you learn any new skills or tricks?
+# yes! the Array#each_slice method is a new one, but very cool! I look forward to using again in the future.
+# 
+# How confident are you with each of the Learning Competencies?
+# Most of them-not fully confident with psuedocoding a hard problem like this and I'm a bit late to the party
+# on writing destructive vs. nondestructive methods, but all in due time.
+# 
+# Which parts of the challenge did you enjoy?
+# Writing the code and getting the code to work.
+# 
+# Which parts of the challenge did you find tedious?
+# None.

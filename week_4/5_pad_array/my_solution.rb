@@ -83,3 +83,27 @@ end
 
 
 # 4. Reflection 
+# What parts of your strategy worked? What problems did you face?
+# the parts of the strategy that worked were those that measured the length of the input array and
+# then pushed the padding value to the array. The problems I faced were writing a non-destructive method.
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# I was wondering about how to refer to the object "self", but after searching through stack overflow
+# answers, I managed to come up with a good understanding of how to use it.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# I'm not sure I understand the difference between a shallow and deep copy...the article I found
+# that seemed to address this exact issue was still a bit confusing: http://ruby.about.com/od/advancedruby/a/deepcopy.htm
+# 
+# Did you learn any new skills or tricks?
+# Yup! I learned about the clone command! This challenge was also useful in making me work within
+# the context of a class.
+# 
+# How confident are you with each of the Learning Competencies?
+# Very confident with them all :)
+# 
+# Which parts of the challenge did you enjoy?
+# I enjoyed writing the code for this. It went by a bit fast, to be honest!
+# 
+# Which parts of the challenge did you find tedious?
+# None.
