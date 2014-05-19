@@ -63,6 +63,23 @@ end
 
 # 3. Refactored Solution
 
+class Array
+	def pad!(array_size, pad_val=nil)
+		if self.length<array_size
+			length_dif = array_size - self.length
+			length_dif.times do
+				self.push(pad_val)
+			end
+			return self
+		else
+			return self
+		end
+	end
+
+	def pad(array_size, pad_val=nil)
+		self.clone.pad!(array_size, pad_val)
+	end	
+end
 
 
 # 4. Reflection 
