@@ -21,14 +21,6 @@ def my_hash_finding_method(source, thing_to_find)
   return return_array
 end
 
-def my_hash_finding_method(source, thing_to_find)
-	return_array = []
-  	source.each do |key, val|
-  		return_array.push(key) if val.include?(thing_to_find)
-  	end
-  	return return_array
-end
-
 # Identify and describe the ruby method you implemented. 
 # I guess the .each iterator is the only ruby method that I implemented on both the hash and the array.
 # I was hoping that I would find something comparable to the `include?' method for hashes (which does exist, but only when looking at keys)
@@ -109,6 +101,24 @@ p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie
 # much more limited understanding of the methods that I used (even though I ultimately settled on a
 # commonly used method) and try to be thorough.
 # 
+# What parts of your strategy worked? What problems did you face?
+# I faced some problems trying to identify methods that were defined for both Hashes and Arrays.
 # 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# -How can I get Hash#include? to work for values into instead of keys? No resources helped :(
 # 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# No concepts
+# 
+# Did you learn any new skills or tricks?
+# Yup! I used the include method for the first time.
+# 
+# How confident are you with each of the Learning Competencies?
+# Very confident.
+# 
+# Which parts of the challenge did you enjoy?
+# Writing the code and seeing it work.
+# 
+# Which parts of the challenge did you find tedious?
+# Researching for a long time and coming up with nothing that worked exactly as it should.
 # 
