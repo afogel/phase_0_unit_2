@@ -9,8 +9,28 @@
 
 # Our Refactored Solution
 
+def bakery_num(num_of_people, fav_food)
+  units_per_food = {"pie" => 8, "cake" => 6, "cookie" => 1}
+  raise ArgumentErrow.new("Ruh Roh I cannot make that!") unless units_per_food.include?(fav_food)
 
+  #for cases when num of people is evenly divided by units of favorite foods
+  if num_of_people % units_per_food[fav_food] == 0
+    num_of_food = num_of_people / units_per_food[fav_food]
+    return "You need to make #{num_of_food} #{fav_food}(s)."
 
+  #for cases when num of people is not evenly divided by units of favorite foods
+  else
+  	units_per_food.each do |food, num|
+      if num > units_per_food[fav_food]
+        instance_variable_set("@#{food}_qty", 0)
+      else
+        instance_variable_set("@#{food}_qty", num_of_people / units_per_food[food])
+        num_of_people %= units_per_food[food]
+      end
+    end
+    return "You need to make #{@pie_qty} pie(s), #{@cake_qty} cake(s), and #{@cookie_qty} cookie(s)."
+	end
+end
 
 
 
@@ -28,7 +48,7 @@ p bakery_num(130, "pie") == "You need to make 16 pie(s), 0 cake(s), and 2 cookie
 # p bakery_num(3, "apples") # this will raise an ArgumentError
 
 # You SHOULD change this driver code. Why? Because it doesn't make sense.
-p bakery_num(41, "cake") == "You need to make 5 pie(s), 0 cake(s), and 1 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
+p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(s)." # WHAAAAAT? I thought I said I wanted cake!
 
 
 

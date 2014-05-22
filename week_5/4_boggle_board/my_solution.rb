@@ -11,6 +11,7 @@ boggle_board = [["b", "r", "a", "e"],
 # Part 1: Access multiple elements of a nested array
 
 # Pseudocode
+# 
 
 # Initial Solution
 
