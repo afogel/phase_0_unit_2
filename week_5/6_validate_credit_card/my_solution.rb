@@ -5,9 +5,11 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
+# Input: a 16 digit integer
+# Output: boolean operator (true or false)
 # Steps:
+# start by asserting that the input integer is 16 digits long
+# pass 
 
 
 # 3. Initial Solution
@@ -28,8 +30,11 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+card = CreditCard.new(4408041234567893)
+p card.check_card == true
 
-
+card = CreditCard.new(4408041234567892)      
+p card.check_card == false
 
 
 
