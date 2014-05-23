@@ -1,6 +1,7 @@
 # U2.W5: Virus Predictor
 
 # I worked on this challenge [by myself, with: ].
+# with Stephen Estrada
 
 # EXPLANATION OF require_relative
 # require_relative is basically like require, except:
@@ -24,8 +25,12 @@ class VirusPredictor
     @next_region = regional_spread
   end
 
-  # The scope of the instance variables are local to the the class. I don't think this can be
-  # refactored...the inputs make sense to me.
+  # The scope of the instance variables are local to the the class. This was refactored by removing
+  # all instance variables as parameters of two methods called by #virus_effects. Since the scope of
+  # instance variables relate to what going in the class, the parameters of #predicted_deaths and 
+  # #speed_of_spread were those instance variables, and the two methods called by #virus_effects are
+  # private (meaning, we don't have to worry about someone trying to access them using different parameters
+  # outside of the class), it's safe to remove them completely from the original call.
   def virus_effects  #HINT: What is the SCOPE of instance variables?
     predicted_deaths
     speed_of_spread
@@ -86,3 +91,31 @@ california.virus_effects
 
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population], STATE_DATA["Alaska"][:region], STATE_DATA["Alaska"][:regional_spread]) 
 alaska.virus_effects
+
+#Reflection
+# What parts of your strategy worked? What problems did you face?
+# Seeing the appropriate way of refactoring took a while. I originally refactored (using loops)
+# in a way that made the code worse and I couldn't figure out what was wrong with the #virus_effects
+# method. In the end, though (and especially due to Stephen's helpful suggestions), I was able to
+# understand the best way to refactor the code.
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# Just syntax questions on case statements. I referred back to codecademy for good examples.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# Refactoring is hard! I think it's just experience seeing it, though.
+# 
+# Did you learn any new skills or tricks?
+# I didn't really learn any new skills or tricks, but this was good practice (once I understood
+# what to look for) to refactor.
+# 
+# How confident are you with each of the Learning Competencies?
+# I'm feeling very comfortable with the learning competencies, but occasionally I may need to
+# refresh my understandings on the refactoring to the highest level.
+# 
+# Which parts of the challenge did you enjoy?
+# I enjoyed reading through the code and understanding what was going on.
+# 
+# Which parts of the challenge did you find tedious?
+# Tedious? none. But I did have a bit of a hard time understanding what exactly I should be looking
+# for with the refactoring directions.

@@ -57,7 +57,26 @@ p get_row(1) == ["i", "o", "d", "t"]
 p get_row(0) == ["b", "r", "a", "e"]
 
 # Reflection 
-
+# What parts of your strategy worked? What problems did you face?
+# My entire strategy worked. The only problem I may have had was overthinking the instructions :)
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# None.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# No concepts are giving me troubles.
+# 
+# Did you learn any new skills or tricks?
+# Not really.
+# 
+# How confident are you with each of the Learning Competencies?
+# very.
+# 
+# Which parts of the challenge did you enjoy?
+# This was also a fairly easy challenge for me.
+# 
+# Which parts of the challenge did you find tedious?
+# None.
 
 
 #-------------------------------------------------------------------------------
@@ -97,3 +116,24 @@ end
 p get_col(1) == ["r", "o", "c", "a"]
 
 # Reflection 
+# What parts of your strategy worked? What problems did you face?
+# My entire strategy worked. The problem I faced was refactoring the code...wasn't sure how to
+# improve on what I wrote.
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# None.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# No concepts are giving me troubles.
+# 
+# Did you learn any new skills or tricks?
+# Not really.
+# 
+# How confident are you with each of the Learning Competencies?
+# very.
+# 
+# Which parts of the challenge did you enjoy?
+# This was also a fairly easy challenge for me.
+# 
+# Which parts of the challenge did you find tedious?
+# None.

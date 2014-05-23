@@ -54,6 +54,31 @@ p bakery_num(41, "cake") == "You need to make 0 pie(s), 6 cake(s), and 5 cookie(
 
 
 #  Reflection 
-
+# What parts of your strategy worked? What problems did you face?
+# My entire strategy worked. I wasn't originally sure on how to use a loop to appropriately declare
+# different variable names, but I managed to get around that using the instance_variable_set method
+# 
+# What questions did you have while coding? What resources did you find to help you answer them?
+# The questions I had while coding were the problems I mentioned with my strategy. I found a 
+# good answer using stack overflow :) Good ol' stack overflow.
+# 
+# What concepts are you having trouble with, or did you just figure something out? If so, what?
+# No concepts are giving me troubles.
+# 
+# Did you learn any new skills or tricks?
+# Yeah! I mean, I think that my solution using instance_variable_set was a clever hack,
+# but I don't know how kosher it actually is to use instance variables to accomplish that goal.
+# But it's a neat trick!
+# 
+# How confident are you with each of the Learning Competencies?
+# very.
+# 
+# Which parts of the challenge did you enjoy?
+# I really enjoyed refactoring the code...it was super satisfying to get rid of so much
+# unnecessary code!
+# 
+# Which parts of the challenge did you find tedious?
+# The tedious part of this challenge was simply to go through each line of bad code and comment
+# on each line. It mainly felt so tedious because so much of the code was tedious :)
 
 
