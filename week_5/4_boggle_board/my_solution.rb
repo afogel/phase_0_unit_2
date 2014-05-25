@@ -79,6 +79,7 @@ p get_row(0) == ["b", "r", "a", "e"]
 # None.
 
 
+<<<<<<< HEAD
 #-------------------------------------------------------------------------------
 
 # Part 3: Now write a method that takes a column number and returns all the elements in the column.
@@ -137,3 +138,5 @@ p get_col(1) == ["r", "o", "c", "a"]
 # 
 # Which parts of the challenge did you find tedious?
 # None.
+=======
+>>>>>>> upstream/master
